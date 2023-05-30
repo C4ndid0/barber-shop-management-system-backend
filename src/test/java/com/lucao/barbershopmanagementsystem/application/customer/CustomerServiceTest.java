@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.*;
 
 class CustomerServiceTest {
@@ -63,9 +64,24 @@ class CustomerServiceTest {
 
     @Test
     void createCustomer_ValidCustomer_ReturnCreatedCustomer(){
-        
+       Customer customer = new Customer("Rogerin","TortaoPraEsquerda@email.org","0800-777-7000");
+
+       when(customerRepository.save(customer)).thenReturn(customer);
+
+       Customer result = customerService.createCustomer(customer);
+
+       assertNotNull(result);
+       assertEquals(customer.getId(), result.getId());
+       assertEquals(customer.getName(), result.getName());
+       assertEquals(customer.getEmail(), result.getEmail());
+       assertEquals(customer.getPhoneNumber(), result.getPhoneNumber());
+       verify(customerRepository, times(1)).save(customer);
     }
 
+    @Test
+    void updateCustomer_ExistingCustomerId_ValidCustomer_ReturnUpdatedCustomer(){}
+
+                                                                                        
 
 
 
