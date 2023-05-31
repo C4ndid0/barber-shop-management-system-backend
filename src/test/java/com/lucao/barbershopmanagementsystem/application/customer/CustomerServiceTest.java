@@ -7,11 +7,10 @@ import com.lucao.barbershopmanagementsystem.infrastructure.persistence.customer.
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
+
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,8 +19,6 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.*;
 
-@SpringBootTest
-@ExtendWith(SpringExtension.class)
 class CustomerServiceTest {
 
     @Mock
@@ -32,7 +29,7 @@ class CustomerServiceTest {
 
     @BeforeEach
     void setUp(){
-        MockitoAnnotations.openMocks(this);
+        MockitoAnnotations.initMocks(this);
         customerService = new CustomerService(customerRepository);
     }
 
@@ -84,8 +81,8 @@ class CustomerServiceTest {
        verify(customerRepository, times(1)).save(customer);
     }
 
-    @Test
-    void updateCustomer_ExistingCustomerId_ValidCustomer_ReturnUpdatedCustomer(){}
+//    @Test
+//    void updateCustomer_ExistingCustomerId_ValidCustomer_ReturnUpdatedCustomer(){}
 
                                                                                         
 
