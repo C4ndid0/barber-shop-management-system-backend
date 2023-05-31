@@ -1,4 +1,4 @@
-package com.lucao.barbershopmanagementsystem.application.customer;
+package com.lucao.barbershopmanagementsystem.application;
 
 import com.lucao.barbershopmanagementsystem.domain.Customer;
 import com.lucao.barbershopmanagementsystem.infrastructure.persistence.customer.CustomerRepository;

@@ -1,6 +1,6 @@
-package com.lucao.barbershopmanagementsystem.presentation.appointment;
+package com.lucao.barbershopmanagementsystem.presentation.rest.appointment;
 
-import com.lucao.barbershopmanagementsystem.application.appointment.AppointmentService;
+import com.lucao.barbershopmanagementsystem.application.AppointmentService;
 import com.lucao.barbershopmanagementsystem.domain.Appointment;
 import com.lucao.barbershopmanagementsystem.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;

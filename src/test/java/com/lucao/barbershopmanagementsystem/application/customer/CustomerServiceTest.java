@@ -1,6 +1,7 @@
 package com.lucao.barbershopmanagementsystem.application.customer;
 
 
+import com.lucao.barbershopmanagementsystem.application.CustomerService;
 import com.lucao.barbershopmanagementsystem.domain.Customer;
 import com.lucao.barbershopmanagementsystem.infrastructure.persistence.customer.CustomerRepository;
 import static org.junit.jupiter.api.Assertions.assertEquals;

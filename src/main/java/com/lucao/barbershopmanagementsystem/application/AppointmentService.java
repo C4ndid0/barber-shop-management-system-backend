@@ -1,4 +1,4 @@
-package com.lucao.barbershopmanagementsystem.application.appointment;
+package com.lucao.barbershopmanagementsystem.application;
 
 import com.lucao.barbershopmanagementsystem.domain.Appointment;
 import com.lucao.barbershopmanagementsystem.infrastructure.persistence.appointment.AppointmentRepository;
@@ -23,7 +23,7 @@ public class AppointmentService {
     }
 
     public Optional<Appointment> getAppointmentById(Long appointmentId){
-        return Optional.of(appointmentRepository.getById(appointmentId));
+        return  appointmentRepository.findById(appointmentId);
     }
 
     public Appointment createAppointment(Appointment appointment){
