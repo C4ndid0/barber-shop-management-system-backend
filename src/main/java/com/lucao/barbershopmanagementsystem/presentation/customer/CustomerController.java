@@ -1,7 +1,7 @@
 package com.lucao.barbershopmanagementsystem.presentation.customer;
 
 import com.lucao.barbershopmanagementsystem.application.customer.CustomerService;
-import com.lucao.barbershopmanagementsystem.domain.customer.Customer;
+import com.lucao.barbershopmanagementsystem.domain.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

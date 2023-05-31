@@ -1,6 +1,6 @@
 package com.lucao.barbershopmanagementsystem.application.customer;
 
-import com.lucao.barbershopmanagementsystem.domain.customer.Customer;
+import com.lucao.barbershopmanagementsystem.domain.Customer;
 import com.lucao.barbershopmanagementsystem.infrastructure.persistence.customer.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

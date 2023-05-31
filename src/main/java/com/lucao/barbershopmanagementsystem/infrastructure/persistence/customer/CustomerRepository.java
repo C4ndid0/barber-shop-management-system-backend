@@ -1,6 +1,6 @@
 package com.lucao.barbershopmanagementsystem.infrastructure.persistence.customer;
 
-import com.lucao.barbershopmanagementsystem.domain.customer.Customer;
+import com.lucao.barbershopmanagementsystem.domain.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
