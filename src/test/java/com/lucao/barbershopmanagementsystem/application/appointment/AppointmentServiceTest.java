@@ -43,4 +43,5 @@ public class AppointmentServiceTest {
         assertEquals(Optional.of(appointment), result);
         verify(appointmentRepository, times(1)).findById(appointmentId);
     }
+
 }
